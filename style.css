@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.cielo {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    animation-name: azul-oscuro;
+    animation-fill-mode: forwards;
+    animation-duration: 6s;
+    position: relative;
+    overflow: hidden;
+    /* bottom: 0; */
+}
+.sol {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    border-radius: 50%;
+    bottom: -120px;
+    animation-fill-mode: forwards;
+    left: calc(50% - 60px);
+    animation-name: none;
+    animation-duration: 9s, 16s;
+    animation-timing-function: linear, ease-in;
+    will-change: transform;
+}
+.estrella {
+    width: 5px;
+    height: 5px;
+    border-radius: 20%;
+    background-color: white;
+    position: absolute;
+    box-shadow: 0 0 6px white;
+    animation-name: none;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+    will-change: opacity;
+}
+.estrella.a {
+    top: 19%;
+    left: 53%;
+    transform: rotate(15deg);
+}
+.estrella.b {
+    top: 80%;
+    left: 66%;
+    transform: rotate(20deg);
+}
+.estrella.c {
+    top: 42%;
+    left: 78%;
+    transform: rotate(45deg);
+}
+.estrella.d {
+    top: 64%;
+    left: 16%;
+    transform: rotate(80deg);
+}
+.estrella.e {
+    top: 87%;
+    left: 27%;
+    transform: rotate(60deg);
+}
+.estrella.f {
+    top: 12%;
+    left: 18%;
+    transform: rotate(5deg);
+}
+.estrella.g {
+    top: 10%;
+    left: 89%;
+    transform: rotate(35deg);
+}
+.estrella.h {
+    top: 42%;
+    left: 34%;
+    transform: rotate(75deg);
+}
+.estrella.i {
+    top: 83%;
+    left: 94%;
+    transform: rotate(15deg);
+}
+.estrella.j {
+    top: 67%;
+    left: 45%;
+    transform: rotate(50deg);
+}
+.estrella.k {
+    top: 48%;
+    left: 63%;
+    transform: rotate(70deg);
+}
+
+@keyframes azul-oscuro {
+    from {
+        background-color: #000;
+    }
+    to {
+        background-color: rgb(0, 2, 110);
+    }
+}
+@keyframes azul {
+    from {
+        background-color: rgb(0, 2, 110);
+    }
+    to {
+        background-color: rgb(0, 4, 255);
+    }
+}
+@keyframes azul-claro {
+    from {
+        background-color: rgb(0, 4, 255);
+    }
+    to {
+        background-color: rgb(32, 122, 240);
+    }
+}
+@keyframes celeste {
+    from {
+        background-color: rgb(32, 122, 240);
+    }
+    to {
+        background-color: rgb(64, 179, 255);
+    }
+}
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        box-shadow: initial;
+    }
+}
+@keyframes sol {
+    0% {
+        display: none;
+    }
+    25% {
+        display: block;
+        background-color: red;
+        box-shadow: 0 0 150px 300px rgba(255, 0, 0, .2);
+        transform: scale(1);
+    }
+    66% {
+        background-color: rgb(255, 115, 0);
+        box-shadow: 0 0 100px 150px rgba(255, 115, 0, .2);
+        transform: scale(.9);
+    }
+    100% {
+        background-color: rgb(255, 255, 0);
+        box-shadow: 0 0 15px 15px rgba(255, 255, 0, .9); 
+        transform: scale(.8);
+    }
+}
+@keyframes sol-sube {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-400px);
+    }
+}
