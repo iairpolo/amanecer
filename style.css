@@ -149,7 +149,7 @@ body {
     }
     66% {
         background-color: rgb(255, 115, 0);
-        box-shadow: 0 0 100px 150px rgba(255, 115, 0, .2);
+        box-shadow: 0 0 100px 150px rgba(255, 115, 0, .4);
         width: 108px;
         height: 108px;
         left: calc(50% - 54px);
