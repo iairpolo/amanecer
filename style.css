@@ -14,8 +14,6 @@ body {
     /* bottom: 0; */
 }
 .sol {
-    width: 120px;
-    height: 120px;
     position: absolute;
     border-radius: 50%;
     bottom: -120px;
@@ -143,6 +141,8 @@ body {
         display: block;
         background-color: red;
         box-shadow: 0 0 150px 300px rgba(255, 0, 0, .2);
+        width: 120px;
+        height: 120px;
         /* transform: scale(1);
         -webkit-transform: scale(1);
         -moz-transform: scale(1); */
