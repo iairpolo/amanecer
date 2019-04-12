@@ -24,7 +24,7 @@ body {
     animation-name: none;
     animation-duration: 9s, 16s;
     animation-timing-function: linear, ease-in;
-    will-change: transform;
+    will-change: transform, -webkit-transform, -moz-transform;
 }
 .estrella {
     width: 5px;
